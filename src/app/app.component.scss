@@ -783,6 +783,8 @@
         padding: 0px;
         width: 252px;
         height: 40px;
+        background: #6cd83f;
+        border-radius: 5px;
     }
     #BUTTON230>.widget-content {
         font-size: 22px;
@@ -1156,6 +1158,7 @@
         padding: 0px;
         width: 274px;
         height: 40px;
+        border-radius: 3px;
     }
     #BUTTON450>.widget-content {
         font-size: 14px;
@@ -1727,6 +1730,7 @@
         left: 100px;
         padding: 0px;
         width: 260px;
+        border-radius: 30px;
         height: 56px;
     }
     #BUTTON492>.widget-content {
@@ -1978,8 +1982,7 @@
 }
 
 #BOX505>.widget-content {
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     box-shadow: 5px 6px 12px #5b8c71;
     background-color: #65d269;
     color: rgba(0, 0, 0, 1);
@@ -5947,6 +5950,8 @@
         padding: 0px;
         width: 274px;
         height: 40px;
+        background: #6cd83f;
+        border-radius: 5px;
     }
     #BUTTON230>.widget-content {
         font-size: 20px;
@@ -6326,6 +6331,7 @@
         padding: 0px;
         width: 274px;
         height: 40px;
+        border-radius: 3px;
     }
     #BUTTON450>.widget-content {
         font-size: 14px;
@@ -6961,6 +6967,7 @@
         padding: 0px;
         width: 260px;
         height: 56px;
+        border-radius: 30px;
     }
     #BUTTON492>.widget-content {
         font-size: 25px;
@@ -9008,7 +9015,7 @@ body {
 
 .back-ground {
     height: 120px;
-    background: url(./../assets/images/lime-green-linear-gradient-1920x1080-c2-a7feb8-dffea7-a-240-f-14.svg) no-repeat;
+    background: url(./../assets/images/lime-green-linear-gradient-1920x1080-c2-a7feb8-dffea7-a-240.svg) no-repeat;
     margin-bottom: -120px;
     background-size: cover;
     box-shadow: 0px 3px 10px #000000;
@@ -9037,4 +9044,296 @@ body {
     transition: width 2s;
     background: white;
     height: 216px !important;
+}
+
+.btn-1 {
+    background-color: #F27935;
+}
+
+.btn-1 .round {
+    background-color: #f59965;
+}
+
+a {
+    text-decoration: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding: 12px 53px 12px 23px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+a span {
+    position: relative;
+    z-index: 3;
+}
+
+a .round {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 2;
+}
+
+a .round i {
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: 50%;
+    margin-left: -4px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.txt {
+    font-size: 18px;
+    line-height: 3;
+}
+
+.type-1 a:hover {
+    padding-left: 48px;
+    padding-right: 28px;
+}
+
+.type-1 a:hover .round {
+    width: calc(100% - 6px);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 30px;
+}
+
+.type-1 a:hover .round i {
+    left: 12%;
+}
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0C5;
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    width: 220px;
+    height: 30px;
+    color: #FFF;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: rgba(244, 67, 54, 1);
+}
+
+.button:hover,
+.button:active {
+    text-decoration: none;
+    color: #0C5;
+    border-color: #0C5;
+    background: #FFF;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+    padding-top: 9px;
+    transition: padding-right 0.5s;
+    font-weight: bold;
+}
+
+.button span:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    border-top: none;
+    border-right: none;
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    transform: rotate(-45deg);
+}
+
+.button:hover span,
+.button:active span {
+    padding-right: 30px;
+}
+
+.button:hover span:after,
+.button:active span:after {
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    opacity: 1;
+    border-color: #0C5;
+    right: 0;
+    top: 50%;
+}
+
+.button1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #0C5;
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    width: 220px;
+    height: 30px;
+    color: #FFF;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: rgba(244, 67, 54, 1);
+}
+
+.button1:hover,
+.button1:active {
+    text-decoration: none;
+    color: white;
+    border-color: #0C5;
+    background: #FFF;
+}
+
+.button1 span {
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+    padding-top: 9px;
+    transition: padding-right 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+.button1 span:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    border-top: none;
+    border-right: none;
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    transform: rotate(-45deg);
+}
+
+.button1:hover span,
+.button1:active span {
+    padding-right: 30px;
+}
+
+.button1:hover span:after,
+.button1:active span:after {
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    opacity: 1;
+    border-color: white;
+    right: 0;
+    top: 50%;
+}
+
+.button2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    width: 220px;
+    height: 30px;
+    overflow: hidden;
+    transition: all 0.5s;
+    background: rgba(244, 67, 54, 1);
+}
+
+.button2:hover,
+.button2:active {
+    text-decoration: none;
+    color: #40ac42;
+    border-color: #0C5;
+    background: #FFF;
+}
+
+.button2 span {
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+    padding-top: 9px;
+    transition: padding-right 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+.button2 span:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #FFF;
+    border-top: none;
+    border-right: none;
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    transform: rotate(-45deg);
+}
+
+.button2:hover span,
+.button2:active span {
+    padding-right: 30px;
+    color: #40ac42;
+}
+
+.button2:hover span:after,
+.button2:active span:after {
+    transition: opacity 0.5s, top 0.5s, right 0.5s;
+    opacity: 1;
+    color: #40ac42;
+    border-color: #40ac42;
+    right: 0;
+    top: 50%;
 }
